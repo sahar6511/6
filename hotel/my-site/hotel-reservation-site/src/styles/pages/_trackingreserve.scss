@@ -1,0 +1,48 @@
+.tracking-reserve{
+    .input{
+        height: 40px;
+        width: 50%;
+    }
+
+    &__table{
+        th,td,table{
+            border: 1px solid $light-gray-color ;
+           
+        }
+        td,th{
+            @extend .p-15;
+        }
+        th,tr:first-child{
+            @extend .text-center;
+
+        }
+        table{
+            border-collapse: separate;
+            border-spacing: 1px;
+            width: 100%;
+            tr{
+                height: 30px;
+                text-align: right;
+                transition-duration: 400ms;
+               
+                &:hover{
+                    background: $light-gray-color;
+                }
+            }
+          
+            // tr:nth-child(even)
+            // {
+            //     td {  }
+            // }   
+        }
+    }
+    .top-menu{
+        background-color: $white-color;
+        a{
+            color: $orange-color;
+        }
+    }
+    .header{
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}

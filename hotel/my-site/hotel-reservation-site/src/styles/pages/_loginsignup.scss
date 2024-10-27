@@ -1,0 +1,104 @@
+.login-signup{
+    &__container{
+        display: flex;
+        justify-content: center;
+        height: 900px;
+        &--info{
+            width:40%;
+            @include column-flex;
+            justify-content: flex-start;
+            
+            @extend .p-30;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #eee, 0 0 10px $light-gray-color;
+            .logo{
+                height: 50px;
+            }
+            .title{
+                color: $orange-color;
+            }
+            .login,
+            .signup{
+                 width: 100%;
+                 span{
+                    color: red;
+                 }
+                
+                .input{
+                    
+                    border: none !important;
+                    outline: none;
+                    border-bottom:1px solid $light-gray-color !important;
+                    &:focus{
+                        border: none !important;
+                        box-shadow: 0 0 0 0.25rem $orange-color !important;
+                    }
+                }
+                button{
+                    margin: 0 auto;
+                    width: 40%;
+                    background-color: $green-color;
+                    color: $white-color;
+                    border-color: $green-boarder-color;
+                    border-radius: 100px;
+                    &:hover{
+                        background-color:$green-color-hover;
+                        border-color : $green-border-color-hover;
+                    }
+                    
+                    color: $white-color;
+                    
+                }
+            }
+            .login-signup__container--btns{
+               @include spaceevenly-flex;
+                width: 100%;
+                
+                .signup-link{
+                    color: $green-boarder-color;
+                    border:2px solid $green-boarder-color;
+                     width: 40%;
+                     border-radius: 100px;
+                    &:hover{
+                        color: $white-color;
+                        background-color: $green-color-hover;
+                    }
+
+                }
+                .login-link{
+                    border-radius: 100px;
+                    color: $white-color;
+                    background-color: $green-color-hover;
+                    border:2px solid $green-boarder-color;
+                    width: 40%;
+                    &:hover{
+                       
+                        color: $green-boarder-color;
+                        background-color: $white-color;
+                        
+                    }
+                }
+            }
+        }
+        &--img{
+            width: 60%;
+            background-image: url(../../images/hotel.webp);
+            background-color: #cccccc;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 5px;
+           
+        }
+    }
+
+    .top-menu{
+        background-color: $white-color;
+        a{
+            color: $orange-color;
+        }
+    }
+    .header{
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}

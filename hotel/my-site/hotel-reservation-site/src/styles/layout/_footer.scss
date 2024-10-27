@@ -1,0 +1,127 @@
+.footer{
+    background-color: $darkblue-color;
+     @extend .ptb-30;
+    
+footer{
+    @include spacebetween-flex;
+    align-items: flex-start;
+    @extend .p-15;
+    .footer-contact{
+        width: 25%;
+
+        h6{
+            color: $orange-color;
+            font-weight: bold;
+            font-size:1rem;
+            @extend .mb-20;
+        }
+        li{
+
+             @extend .mtb-10;
+             @include flex-container;
+             color: $white-color;
+             gap:5px;
+             font-size: 1rem;
+             a{
+                color: $white-color;
+                transition-duration: 400ms;
+                &:hover{
+                    color: $orange-color
+                }
+             }
+         
+        }
+       
+        .footer-socialicon{
+            width: 50%;
+            @include spacebetween-flex;
+            li{
+                border: 1px solid $white-color;
+                border-radius: 50%;
+                @extend .p-10;
+                transition-duration: 400ms;
+                @include center-flex;
+                &:hover{
+                    background-color: $white-color;
+                    color: $orange-color;
+                }
+            }
+        }
+    
+    
+    }
+
+    .footer-otherlinks{
+        width: 25%;
+        h6{
+            color: $orange-color;
+            font-weight: bold;
+            font-size:1rem;
+          
+            
+        }
+        li{
+
+            @extend .mtb-10;
+            @include flex-container;
+            color: $white-color;
+            gap:5px;
+            font-size: 1rem;
+            transition-duration: 400ms;
+            &:hover{
+                color: $orange-color
+            }
+        
+       }
+    }
+    .footer-services{
+        width: 25%;
+        h6{
+            color: $orange-color;
+            font-weight: bold;
+            font-size:1rem;
+            @extend .mb-20;
+        }
+        li{
+
+            @extend .mtb-10;
+            @include flex-container;
+            color: $white-color;
+            gap:5px;
+            font-size: 1rem;
+            transition-duration: 400ms;
+                &:hover{
+                    color: $orange-color
+                }
+        
+       }
+
+    }
+    .footer-info{
+        border-radius: 5px;
+        width:25%;
+        background-color: $orange-color;
+        @include column-flex;
+        padding: 20px;
+        h2{
+            color: $white-color;
+            font-size: 1.5rem;
+            font-weight: bold;
+            @extend .mb-5;
+        }
+        p{
+            text-align: justify;
+            color: $white-color;
+            
+        }
+    }
+}
+.copyright{
+    text-align: center;
+    div{
+        @extend .p-15;
+        border-top: 1px solid rgba(256, 256, 256, .1);
+        color: $white-color;
+    }
+}
+}

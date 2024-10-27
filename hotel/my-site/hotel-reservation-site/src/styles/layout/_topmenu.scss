@@ -1,0 +1,54 @@
+.top-menu{
+
+   
+    //  z-index: 97 !important;
+    background-color: #00000099;
+    @extend .p-15;
+    &__container{
+
+        @include spacebetween-flex;
+       
+        &--right{
+            @include right-flex;
+            width: 30%;
+            gap:20px;
+        }
+        &--center{
+            
+                @include center-flex;
+                width: 30;
+                h3{
+                    color: $orange-color;
+                }
+                img{
+                    height: 50px;
+                }
+           
+        }
+        &--left{
+            @include left-flex;
+            width:30%;
+            gap:20px;
+            li{
+                @include flex-container;
+                // color: $orange-color;
+                color: $white-color;
+                a{
+                    font-size: 15px;
+                    // color: $primary-color;
+                    color: $white-color;
+                    @extend .pl-5;
+                }
+                
+            }
+        }
+        a{
+            // color: $orange-color;
+            color: $white-color;
+            font-size: 20px;
+            &:hover{
+                color: $orange-color-hover
+            }
+        }
+    }
+}

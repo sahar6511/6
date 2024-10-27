@@ -1,0 +1,15 @@
+.search-panel{
+    width: 70%;
+    border-bottom: 2px solid $orange-color;
+    @include flex-container;
+    align-items: flex-end !important;
+ 
+        .input{
+            border: none !important;
+            outline: none !important;
+            
+        }
+   
+   
+    
+}

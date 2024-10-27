@@ -1,0 +1,21 @@
+.btn{
+    @include center-flex;
+    font-weight: bolder;
+    transition-duration: 400ms;
+    padding: .6rem;
+    border-radius: 5px;
+    border: 2px solid inherit;
+    cursor: pointer;
+}
+.delete-btn{
+    @include center-flex;
+    font-weight: bolder;
+    transition-duration: 400ms;
+    padding: .6rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: $white-color;
+    
+}

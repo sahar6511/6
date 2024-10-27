@@ -1,0 +1,22 @@
+.personal-info{
+    border: 1px solid $light-gray-color;
+    border-radius: 5px;
+    @extend .p-15;
+    &__container{
+            @include spacebetween-flex;
+             flex-wrap: wrap; 
+            .form-control{
+                width: 40%;
+                input{
+                    height: 40px;
+                }
+                span{
+                    color:red;
+                    font-size: .7rem;
+                }
+        }
+            
+
+    }
+
+}

@@ -1,0 +1,29 @@
+.complete-info{
+
+    &__reserved--list,
+    &__cart--shopping,
+    .payment-type,.lows{
+        border: 1px solid $light-gray-color;
+        border-radius: 5px;
+        @extend .p-15;
+        
+    }
+    .lows-title
+    {
+    @include flex-container;
+    cursor: pointer;
+    transition-duration: 400ms;
+    &:hover{
+        color: $orange-color;
+    }
+    }
+    .btn{
+        color: #fff;
+        background-color: #388E3C;
+        border-color: #558B2F;
+        &:hover{
+            background-color: #1B5E20;
+            border-color: #2E7D32;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.special-rooms{
+    @extend .p-15;
+    &__container{
+        @include spacebetween-flex;
+        @extend .ptb-30;
+        
+    }
+}
